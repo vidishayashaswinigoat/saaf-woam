@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-terracotta: #C05621;
+  --color-olive: #4A5D23;
+  --color-charcoal: #1A202C;
+  --color-oat: #FDFBF7;
+  --color-oat-dark: #F9F7F2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+  @apply font-sans text-charcoal bg-oat;
+}
+
+h1, h2, h3, .serif {
+  @apply font-serif;
+}
+
+.btn-primary {
+  @apply bg-terracotta text-white px-8 py-3 rounded-sm font-medium uppercase tracking-widest text-xs hover:opacity-90 transition-all;
+}
+
+.btn-secondary {
+  @apply border border-terracotta text-terracotta px-8 py-3 rounded-sm font-medium uppercase tracking-widest text-xs hover:bg-terracotta hover:text-white transition-all;
+}
